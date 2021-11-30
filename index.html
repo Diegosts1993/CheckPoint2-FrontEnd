@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Prefeitura de Santos</title>
+</head>
+
+<body>
+
+  <header>
+    <img id="image" src="./imagem/logo21-pb-horz-transparente4x.png" alt="logo cidade de Santos - horizontal">
+    <div id="linha-vertical"></div>
+    <div class="cabeca">
+      <h1>A prefeitura de Santos deseja lhe conhecer. Nos ajude a melhorar a sua experiência em nossa cidade respondendo as perguntas abaixo.</h1>
+    </div>
+  </header>
+
+  <main>
+    <form action="formulario-padrao" method="post">
+      <div class="campoform">
+        <label for="usuario">Nome</label>
+        <input type="text" name="usuario" id="usuario" maxlength="100">
+      </div>
+    <div class="campoform">
+      <label for="email">E-mail</E-mail></label>
+      <input type="text" name="email" id="email">
+    </div>
+    <div class="campoform">
+      <label for="telefone">Telefone para contato</label>
+      <input type="number" name="telefone" id="telefone" required placeholder="(xx) xxxxx - xxxx">
+    </div>
+    <div class="campoform">
+      <label for="data">Data de Nascimento</label>
+      <input type="date" name="data" id="data">
+    </div>
+    <div class="campoform">
+      <p><strong>Você tem mais de 18 anos?</strong></p>
+      <label for="sim">
+        <input type="radio" name="idade" id="sim" checked>Sim
+      </label>
+      <label for="nao">
+        <input type="radio" name="idade" id="nao">Não
+      </label>
+    </div>
+  </main>
+
+  <aside>
+    <div class="campoform">
+      <label for="escolha">Selecione um ponto turístico</label>
+      <select name="escolha" id="">
+        <option value="" selected disabled></option>
+        <option value="aquario">Aquário de Santos</option>
+        <option value="bolsa">Bolsa do Café</option>
+        <option value="mont">Mont Serrat</option>
+        <option value="orquidario">Orquidário</option>
+        <option value="outeiro">Outeiro de Santa Catarina</option>
+        <option value="quebra">Quebra-Mar</option>
+        <option value="bondinho">Passeio de bondinho</option>
+        <option value="bandeiras">Praça das Bandeiras</option>
+      </select>
+    </div>
+    <div class="campoform">
+      <p><strong>Qual é o seu principal interresse na cidade de Santos?</strong> (Pode marcar mais de uma opção)*</p>
+      <label for="turista"> 
+        <input type="checkbox" name="turista" id="turista">Sou Turista
+      </label>
+      <label for="morador" class="radio"> 
+        <input type="checkbox" name="morador" id="morador">Sou Morador(a)
+      </label>
+      <label for="estudante" class="radio"> 
+        <input type="checkbox" name="estudante" id="estudante">Sou estudante
+      </label>
+    </div>
+    <div class="botoes">
+      <div class="button">
+        <button type="reset" id="limpar">Limpar</button>
+      </div>
+      <div class="button">
+        <button type="submit" id="enviar">Enviar</button>
+      </div>
+    </div>
+  </form>
+  </aside>
+
+  <footer>
+    <p><strong>By</strong></p> 
+    <img id="image" src="./imagem/logo-DH.png" alt="logo da Digital House - horizontal">
+  </footer>
+
+</body>
+
+</html>
